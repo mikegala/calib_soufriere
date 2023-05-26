@@ -1,6 +1,6 @@
 description	!OMP_NUM_THREADS	P               R    Y       A       F       T       C      CONF    RATE    MAX      OUTFILE
-1		    1			        'box_112_1520'	1.4  10e9    5    25      5e6    60e6   250e3    0.02    100000	'Triax_Fcalib_0.02_250kPa'
-2		    1			        'box_112_1520'	1.4  10e9    5    25      5e6    60e6   20e6     0.02    150000	'Triax_Fcalib_0.02_20MPa'
-3		    1			        'box_112_1520'	1.4  10e9    5    25      5e6    60e6   40e6     0.02    200000	'Triax_Fcalib_0.02_40MPa'
-4		    1			        'box_112_1520'	1.4  10e9    5    25      5e6    60e6   60e6     0.02    250000	'Triax_Fcalib_0.02_60MPa'
-5		    1			        'box_112_1520'	1.4  10e9    5    25      5e6    60e6   93e6     0.02    300000	'Triax_Fcalib_0.02_93MPa'
+1		    3			        'box_112_por0.3_9976'	1.4  40e9    0.25    35      5e6    100e6   250e3    0.02    45000	'Triax_calib_A0.25_Y40_C100_T5_250kPa'
+2		    3			        'box_112_por0.3_9976'	1.4  40e9    0.25    35      5e6    100e6   50.e3    0.02    40000	'Triax_calib_A0.25_Y40_C100_T5_50kPa'
+3		    3			        'box_112_por0.3_9976'	1.4  40e9    0.25    35      5e6    100e6   25.e2    0.02    40000	'Triax_calib_A0.25_Y40_C100_T5_2.5kPa'
+4		    3			        'box_112_por0.3_9976'	1.4  40e9    0.25    35      5e6    100e6   5.0e2    0.02    40000	'Triax_calib_A0.25_Y40_C100_T5_0.5kPa'
+5		    3			        'box_112_por0.3_9976'	1.4  40e9    0.25    35      5e6    100e6   1.0e1    0.02    40000	'Triax_calib_A0.25_Y40_C100_T5_10Pa'
