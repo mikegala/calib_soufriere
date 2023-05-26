@@ -40,25 +40,25 @@ def store(var,textFile):
     var.append(unbF)
 
 ### data input
-dataFile1='100kPa_triaxialCompression_0.02_Y40e9'
+dataFile1='Triax_calib_A0.25_Y40_C100_T5_250kPa'
 a1=[]
 store(a1,dataFile1)
 
-#dataFile2='Triax_A0.25_calibok_250kPa'
-#a2=[]
-#store(a2,dataFile2)
+dataFile2='Triax_calib_A0.25_Y40_C100_T5_50kPa'
+a2=[]
+store(a2,dataFile2)
 
-#dataFile3='Triax_A0.05_calib_250kPa'
-#a3=[]
-#store(a3,dataFile3)
+dataFile3='Triax_calib_A0.25_Y40_C100_T5_2.5kPa'
+a3=[]
+store(a3,dataFile3)
 
-#dataFile4='Triax_A0.10_calib_250kPa'
-#a4=[]
-#store(a4,dataFile4)
+dataFile4='Triax_calib_A0.25_Y40_C100_T5_0.5kPa'
+a4=[]
+store(a4,dataFile4)
 
-#dataFile5='Triax_Fcalib_0.02_93MPa'
-#a5=[]
-#store(a5,dataFile5)
+dataFile5='Triax_calib_A0.25_Y40_C100_T5_10Pa'
+a5=[]
+store(a5,dataFile5)
 
 # s1max=[]
 # s3max=[]
@@ -102,10 +102,10 @@ ax1=subplot(1,1,1)
 xlabel(r'$\varepsilon_1$ [$10^{-3}$]')
 ## xlabel(r'$\sigma_3$ [MPa]')
 plot([x*1000 for x in a1[4]],[(i-j)/1e6 for i, j in zip(a1[7],a1[5])],'-k',linewidth=lw,label='conf250kPa')
-#plot([x*1000 for x in a2[4]],[(i-j)/1e6 for i, j in zip(a2[7],a2[5])],'-#r',linewidth=lw,label='conf20MPa')
-#plot([x*1000 for x in a3[4]],[(i-j)/1e6 for i, j in zip(a3[7],a3[5])],'-b',linewidth=lw,label='conf40MPa')
-#plot([x*1000 for x in a4[4]],[(i-j)/1e6 for i, j in zip(a4[7],a4[5])],'-g',linewidth=lw,label='conf60MPa')
-#plot([x*1000 for x in a5[4]],[(i-j)/1e6 for i, j in zip(a5[7],a5[5])],'-y',linewidth=lw,label='conf93MPa')
+plot([x*1000 for x in a2[4]],[(i-j)/1e6 for i, j in zip(a2[7],a2[5])],'-r',linewidth=lw,label='conf50kPa')
+plot([x*1000 for x in a3[4]],[(i-j)/1e6 for i, j in zip(a3[7],a3[5])],'-b',linewidth=lw,label='conf2.5kPa')
+plot([x*1000 for x in a4[4]],[(i-j)/1e6 for i, j in zip(a4[7],a4[5])],'-g',linewidth=lw,label='conf0.5kPa')
+plot([x*1000 for x in a5[4]],[(i-j)/1e6 for i, j in zip(a5[7],a5[5])],'-y',linewidth=lw,label='conf10Pa')
 ## plot([x*1000 for x in a1[4]],[i/1e6 for i, j in zip(a1[7],a1[5])],'-k',linewidth=lw)
 ##plot([x*1000 for x in a1[7]],[x*1000 for x in a1[5]],'-k',linewidth=lw)
 #ylabel(r'$\sigma_1$ [MPa]')
