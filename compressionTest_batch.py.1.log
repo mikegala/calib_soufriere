@@ -1,0 +1,16 @@
+TCP python prompt on localhost:9000, auth cookie `akyesc'
+Welcome to Yade 2022.01a 
+Using python version: 3.10.6 (main, Mar 10 2023, 10:55:28) [GCC 11.3.0]
+Warning: no X rendering available (see https://bbs.archlinux.org/viewtopic.php?id=13189)
+XMLRPC info provider on http://localhost:21000
+Running script compressionTest_batch.py
+nbSpheres= 9976.0  | Rmean= 0.031127148105453077  | Rmax/Rmin= 1.9973438683632665
+K= 12.75541299117883
+
+=================== JOB SUMMARY ================
+id      : 1
+status  : 0 (OK)
+duration: 00:49:08
+command : YADE_BATCH=uniaxial.Table:2 DISPLAY=  /usr/bin/yade-double --threads=1 --nice=10 -x compressionTest_batch.py> compressionTest_batch.py.1.log 2>&1
+started : Fri May 26 02:19:57 2023
+finished: Fri May 26 03:09:06 2023

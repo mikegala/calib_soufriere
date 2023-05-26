@@ -1,0 +1,4 @@
+description !OMP_NUM_THREADS P                      D        R   Y    A   F  T     C    MAX   OUTFILE              
+1           1                'box_112_por0.3_9976'  2700/0.7 1.40 40e9 0.25 35 5.0e6 280e6 18000 'Comp_C280_Y40_A0.25_T5.0_por0.3'
+1           1                'box_112_por0.3_9976'  2700/0.7 1.40 40e9 0.25 35 5.0e6 100e6 18000 'Comp_C100_Y40_A0.25_T5.0_por0.3'
+
