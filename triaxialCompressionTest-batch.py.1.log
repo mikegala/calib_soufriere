@@ -1,0 +1,24 @@
+Welcome to Yade 2020.01a 
+Using python version: 3.8.10 (default, Mar 13 2023, 10:26:41) 
+[GCC 9.4.0]
+Warning: no X rendering available (see https://bbs.archlinux.org/viewtopic.php?id=13189)
+XMLRPC info provider on http://localhost:21000
+TCP python prompt on localhost:9000, auth cookie `scuyke'
+Running script triaxialCompressionTest-batch.py
+nbSpheres= 9976.0  | Rmean= 0.031127148105453077  | Rmax/Rmin= 1.9973438683632665
+K= 12.75541299117883
+ISOTROPIC CONFINEMENT!
+unbalanced force: 0.20048437089520005  mean stress:  242134.39582731292
+unbalanced force: 0.07126966288128203  mean stress:  249958.90303870206
+unbalanced force: 0.025094925266334753  mean stress:  250028.91214355276
+unbalanced force: 0.010782435258526511  mean stress:  250000.34944193493
+unbalanced force: 0.0041623452535326936  mean stress:  250000.4575695053
+DEVIATORIC LOADING!
+
+=================== JOB SUMMARY ================
+id      : 1
+status  : 0 (OK)
+duration: 00:19:12
+command : YADE_BATCH=triaxial.Table:2 DISPLAY=  /usr/bin/yade --threads=4 --nice=10 -x triaxialCompressionTest-batch.py> triaxialCompressionTest-batch.py.1.log 2>&1
+started : Thu Jun  1 12:31:00 2023
+finished: Thu Jun  1 12:50:12 2023
