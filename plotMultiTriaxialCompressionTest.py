@@ -40,17 +40,17 @@ def store(var,textFile):
     var.append(unbF)
 
 ### data input
-dataFile1='Triax_rate.02_250KPa_C100_T5_250kPa'
+dataFile1='correction_triax_250e3_0.1'
 a1=[]
 store(a1,dataFile1)
 
-dataFile2='Triax_rate.1_250KPa_C100_T5_250kPa'
-a2=[]
-store(a2,dataFile2)
+# dataFile2='Triax_rate.1_250KPa_C100_T5_250kPa'
+# a2=[]
+# store(a2,dataFile2)
 
-dataFile3='Triax_rate.001_250KPa_C100_T5_250kPa'
-a3=[]
-store(a3,dataFile3)
+# dataFile3='Triax_rate.001_250KPa_C100_T5_250kPa'
+# a3=[]
+# store(a3,dataFile3)
 
 # dataFile4='Triax_calib_A0.25_Y40_C100_T5_750kPa'
 # a4=[]
@@ -79,7 +79,17 @@ rcParams.update({'legend.numpoints':1,'font.size': 20,'axes.labelsize':25,'xtick
 lw=2
 ms=5
 
-## no es sigma1 
+## no es sigma1
+
+figure(0,figsize=(12,10))
+ax1=subplot(1,1,1)
+xlabel('iteration [-]')
+ax1.plot(a1[0],[x/1e6 for x in a1[5]],'-k',linewidth=lw,label='s1')
+ax1.plot(a1[0],[x/1e6 for x in a1[6]],'-b',linewidth=lw,label='s2')
+ax1.plot(a1[0],[x/1e6 for x in a1[7]],'-r',linewidth=lw,label='s3')
+ylabel(r'$\sigma_1$ [MPa]') 
+legend(loc="best")
+ 
 
 #figure(1,figsize=(14,10))
 #ax1=subplot(1,1,1)
@@ -101,29 +111,29 @@ ms=5
 # # ### show or save
 #show()
 
-figure(1,figsize=(14,10))
-ax1=subplot(1,1,1)
-xlabel(r'$\varepsilon_1$ [$10^{-3}$]')
-## xlabel(r'$\sigma_3$ [MPa]')
-# plot([x*1000 for x in a6[4]],[(i-j)/1e6 for i, j in zip(a6[7],a6[5])],'-y',linewidth=lw,label='conf1MPa')
-# plot([x*1000 for x in a4[4]],[(i-j)/1e6 for i, j in zip(a4[7],a4[5])],'-g',linewidth=lw,label='conf750kPa')
-plot([x*1000 for x in a2[4]],[(i-j)/1e6 for i, j in zip(a2[7],a2[5])],'-r',linewidth=lw,label='rate.02')
-plot([x*1000 for x in a1[4]],[(i-j)/1e6 for i, j in zip(a1[7],a1[5])],'-k',linewidth=lw,label='rate.1')
-plot([x*1000 for x in a3[4]],[(i-j)/1e6 for i, j in zip(a3[7],a3[5])],'-b',linewidth=lw,label='rate.001')
-# plot([x*1000 for x in a5[4]],[(i-j)/1e6 for i, j in zip(a5[7],a5[5])],'-y',linewidth=lw,label='conf10Pa')
-## plot([x*1000 for x in a1[4]],[i/1e6 for i, j in zip(a1[7],a1[5])],'-k',linewidth=lw)
-##plot([x*1000 for x in a1[7]],[x*1000 for x in a1[5]],'-k',linewidth=lw)
-#ylabel(r'$\sigma_1$ [MPa]')
-ylabel(r'$\sigma_1$ - $\sigma_3$  [MPa]')
-#axis(ymin=0)
-ticklabel_format(axis='both', style='sci', scilimits=(0,0))
-legend(loc="best")
-# ax2=ax1.twinx()
-# ax2.plot([x*1000 for x in a1[4]],a1[8],'-b',linewidth=lw)
-# ax2.plot([x*1000 for x in a1[4]],a1[9],'-r',linewidth=lw)
-# ax2.plot([x*1000 for x in a1[4]],[(i+j) for i, j in zip(a1[8],a1[9])],'--k',linewidth=lw)
-# ylabel('number of cracks [-]')
-# legend(('tensile','shear','total'),loc=2)
+# figure(1,figsize=(14,10))
+# ax1=subplot(1,1,1)
+# xlabel(r'$\varepsilon_1$ [$10^{-3}$]')
+# ## xlabel(r'$\sigma_3$ [MPa]')
+# # plot([x*1000 for x in a6[4]],[(i-j)/1e6 for i, j in zip(a6[7],a6[5])],'-y',linewidth=lw,label='conf1MPa')
+# # plot([x*1000 for x in a4[4]],[(i-j)/1e6 for i, j in zip(a4[7],a4[5])],'-g',linewidth=lw,label='conf750kPa')
+# plot([x*1000 for x in a2[4]],[(i-j)/1e6 for i, j in zip(a2[7],a2[5])],'-r',linewidth=lw,label='rate.02')
+# plot([x*1000 for x in a1[4]],[(i-j)/1e6 for i, j in zip(a1[7],a1[5])],'-k',linewidth=lw,label='rate.1')
+# plot([x*1000 for x in a3[4]],[(i-j)/1e6 for i, j in zip(a3[7],a3[5])],'-b',linewidth=lw,label='rate.001')
+# # plot([x*1000 for x in a5[4]],[(i-j)/1e6 for i, j in zip(a5[7],a5[5])],'-y',linewidth=lw,label='conf10Pa')
+# ## plot([x*1000 for x in a1[4]],[i/1e6 for i, j in zip(a1[7],a1[5])],'-k',linewidth=lw)
+# ##plot([x*1000 for x in a1[7]],[x*1000 for x in a1[5]],'-k',linewidth=lw)
+# #ylabel(r'$\sigma_1$ [MPa]')
+# ylabel(r'$\sigma_1$ - $\sigma_3$  [MPa]')
+# #axis(ymin=0)
 # ticklabel_format(axis='both', style='sci', scilimits=(0,0))
-#savefig(dataFile1+'_SIG1vsEPS.tiff',dpi=200,format='tiff',transparent=False)
+# legend(loc="best")
+# # ax2=ax1.twinx()
+# # ax2.plot([x*1000 for x in a1[4]],a1[8],'-b',linewidth=lw)
+# # ax2.plot([x*1000 for x in a1[4]],a1[9],'-r',linewidth=lw)
+# # ax2.plot([x*1000 for x in a1[4]],[(i+j) for i, j in zip(a1[8],a1[9])],'--k',linewidth=lw)
+# # ylabel('number of cracks [-]')
+# # legend(('tensile','shear','total'),loc=2)
+# # ticklabel_format(axis='both', style='sci', scilimits=(0,0))
+# #savefig(dataFile1+'_SIG1vsEPS.tiff',dpi=200,format='tiff',transparent=False)
 show()
