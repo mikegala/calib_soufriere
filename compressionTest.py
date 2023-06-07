@@ -6,17 +6,17 @@ from yade import ymport, plot
 ################# SIMULATIONS DEFINED HERE
 
 #### pre-existing packing
-PACK=P
+PACK='box_112_por0.35_wrong_9912'
 
 #### Simulation Control
 rate=-0.1 #deformation rate
-iterMax=MAX # maximum number of iterations 
+iterMax=15000 # maximum number of iterations 
 saveData=int(iterMax/1000) # data record interval
 saveVTK=int(iterMax/10.) # saving output files for paraview 
-OUT='correction_triax_250e3_0.1'
+OUT='comp'+PACK
 
 #### Microproperties (interparticle parameters)
-DENS=2700/0.7 # this one can be adjusted for different reasons (porosity of packing vs porosity of material / increase time step (no gravity -> no real effect on the result)
+DENS=2700/0.65 # this one can be adjusted for different reasons (porosity of packing vs porosity of material / increase time step (no gravity -> no real effect on the result)
 
 intR=1.4 # allows near neighbour interaction (can be adjusted for every packing / the bigger -> the more brittle / careful when intR is too large -> bonds can be created "over" particles) -> intR can be calibrated to reach a certain coordination number K (see calculation on line 115)
 YOUNG=40e9 # this one controls the Young's modulus of the material
