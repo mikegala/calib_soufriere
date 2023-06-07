@@ -1,7 +1,7 @@
 description !OMP_NUM_THREADS P                            R    Y    A    F  T     C    CONF RATE MAX    OUTFILE                    
-1           2                'box_112_por0.35_wrong_9912' 1.39 45e9 0.18 45 6.6e6 99e6 5e6  0.01 100000 'triax_box_112_wrong_5MPa' 
-2           2                'box_112_por0.35_wrong_9912' 1.39 45e9 0.18 45 6.6e6 99e6 15e6 0.01 150000 'triax_box_112_wrong_15MPa'
-3           2                'box_112_por0.35_wrong_9912' 1.39 45e9 0.18 45 6.6e6 99e6 30e6 0.01 200000 'triax_box_112_wrong_30MPa'
-4           2                'box_112_por0.35_wrong_9912' 1.39 45e9 0.18 45 6.6e6 99e6 50e6 0.01 300000 'triax_box_112_wrong_50MPa'
-5           2                'box_112_por0.35_wrong_9912' 1.39 45e9 0.18 45 6.6e6 99e6 70e6 0.01 400000 'triax_box_112_wrong_70MPa'
-6           2                'box_112_por0.35_wrong_9912' 1.39 45e9 0.18 45 6.6e6 99e6 99e6 0.01 500000 'triax_box_112_wrong_99MPa'
+1           2                'box_112_por0.35_wrong_9912' 1.39 45e9 0.18 45 6.6e6 99e6 5e6  0.01 100000 'triax_box_112_9912_5MPa' 
+2           2                'box_112_por0.35_wrong_9912' 1.39 45e9 0.18 45 6.6e6 99e6 15e6 0.01 150000 'triax_box_112_9912_15MPa'
+3           2                'box_112_por0.35_wrong_9912' 1.39 45e9 0.18 45 6.6e6 99e6 30e6 0.01 200000 'triax_box_112_9912_30MPa'
+4           2                'box_112_por0.35_wrong_9912' 1.39 45e9 0.18 45 6.6e6 99e6 50e6 0.01 300000 'triax_box_112_9912_50MPa'
+5           2                'box_112_por0.35_wrong_9912' 1.39 45e9 0.18 45 6.6e6 99e6 70e6 0.01 400000 'triax_box_112_9912_70MPa'
+6           2                'box_112_por0.35_wrong_9912' 1.39 45e9 0.18 45 6.6e6 99e6 99e6 0.01 500000 'triax_box_112_9912_99MPa'
